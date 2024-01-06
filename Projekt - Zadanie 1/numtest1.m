@@ -1,0 +1,13 @@
+function numtest1()
+fprintf("============================== EKSPERYMENT NUMERYCZNY 1" + ...
+        " ===============================\n\n");
+fprintf("Prezentacja rzędu kwadratury. Dla niepodzielonego trójkąta " + ...
+    "(n = 1).\nPrzybliżenie całek wielomianów co najwyżej " + ...
+    "3 stopnia powinno być dokładne n\n\n");
+
+test2(1, 'n');
+
+fprintf("\nNatomiast dla wyższych n powinny powstać błędy " + ...
+    "pochodzące od dodawania wyników z podobszarów\nDla n = 200:\n\n");
+
+test2(200, 'n');

@@ -1,4 +1,4 @@
-function S = P1Z22_MWY_triangInt(f, p, n)
+function S = P1Z22_MWY_triangInt(f, p, n, drawPicture)
 % Projekt 1, zadanie 22
 % Miłosz Wysocki, 324572
 %
@@ -12,8 +12,10 @@ function S = P1Z22_MWY_triangInt(f, p, n)
 %          (obszaru całkowania) p(i,:) - współrzędne punktu pi
 %   n    - liczba określająca podział obszaru całkowania - zostanie on
 %          podzielony na n^2 mniejszych trójkątów przystających
+%   draw - argument opcjonalny, napis, jeśli jest równy 'y'
+%          to funkcja narysuje podział obszaru całkowania
 % WYJŚCIE
-%   intg - przybliżona wartość całki podwójnej funkcji func na trójkącie
+%   S - przybliżona wartość całki podwójnej funkcji f na trójkącie
 %          określonym przez przez punkty p1 p2 p3
 
 % Podzielmy obszar całkowania (trójkąt) na n^2 podobnych do niego 
@@ -21,9 +23,11 @@ function S = P1Z22_MWY_triangInt(f, p, n)
 Triangles = divide(p, n);
 
 % Narysujmy to aby sprawdzić, czy rzeczywiście działa
-draw(p, n, Triangles);
+if nargin == 4 && drawPicture == 'y'
+    draw(p, n, Triangles);
+end
 
-% Mamy już wierzchołki małych podobszarów (trójkącików)
+% Mamy już wierzchołki małych podobszarów (trójkątów)
 % możemy więc na każdym wykonać kwadraturę prostą
 S = 0;
 for column = 1:n
@@ -31,8 +35,7 @@ for column = 1:n
         triangle = ...
           [ Triangles(column, row, 1) Triangles(column, row, 2)    ;
             Triangles(column, row+1, 1) Triangles(column, row+1, 2);
-            Triangles(column+1, row, 1) Triangles(column+1, row, 2)
-            ];
+            Triangles(column+1, row, 1) Triangles(column+1, row, 2)];
         S = S + Sswk(f, triangle);
     end
     for row = 2:(n+1-column)
@@ -42,8 +45,7 @@ for column = 1:n
         triangle = ...
           [ Triangles(column+1, row-1, 1) Triangles(column+1, row-1, 2);
             Triangles(column+1, row, 1) Triangles(column+1, row, 2)    ;
-            Triangles(column, row, 1) Triangles(column, row, 2)
-            ];
+            Triangles(column, row, 1) Triangles(column, row, 2)        ];
         S = S + Sswk(f, triangle);
     end
 end
