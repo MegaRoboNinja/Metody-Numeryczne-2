@@ -1,5 +1,4 @@
 clearvars;
-%jest błąd
 
 % dy/dx = 0
 a = { @(x) 0, @(x) 1 };

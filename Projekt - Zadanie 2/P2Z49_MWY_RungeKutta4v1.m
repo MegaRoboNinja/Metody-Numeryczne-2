@@ -17,7 +17,7 @@ function [x, y] = P2Z49_MWY_RungeKutta4v1(l, r, a, b, Y0, N, RK)
 %   Y0 - wektor zwierający wartości punkt x0 i początkowe funkcji y i jej
 %        pochodnych występujących w równaniu, w punkcie x0. Jest on
 %        postaci:
-%               [ y(x0), y'(x0), y''(x0) ... y^(m-1)(x0)]^Ts
+%               [ y(x0), y'(x0), y''(x0) ... y^(m-1)(x0) ]^Ts
 %   N  - liczba punktów, w których zostanie przybliżona wartość y(x)
 %   RK - uchwyt do funkcji zwracającej tablicę butchera definiująca metodę
 %        jaką należy zastosować.

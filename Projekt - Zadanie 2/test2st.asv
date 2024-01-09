@@ -15,4 +15,4 @@ figure(2);
 plot(x, yv1, x, yv2, x, yprec, LineWidth=2);
 legend('przybliżenie m. bez x w Y','przybliżenie m. z x w Y', 'dokładna wartość');
 
-disp(max (abs(yv2 - yprec')) );
+disp(max (abs(yv1 - yprec)) )
