@@ -1,6 +1,6 @@
 ## OPIS
 
-W każdym projekcie główny program znajduje się w pliku o nazwie postaci P1Z22_MWY_...  
+W każdym projekcie główny program znajduje się w pliku o nazwie postaci mniej więcej: P1Z22_MWY_...  
 Dodatkowo załączone są różne testy poprawności programu oraz testy numeryczne.
 
 ### Projekt Rozgrzewkowy
