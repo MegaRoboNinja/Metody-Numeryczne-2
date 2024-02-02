@@ -1,10 +1,10 @@
 ## OPIS
 
-W każdym projekcie główny program znajduje się w pliku o nazwie postaci mniej więcej: P1Z22_MWY_...  
+W każdym projekcie główny program znajduje się w pliku o nazwie mniej więcej postaci: P1Z22_MWY_...  
 Dodatkowo załączone są różne testy poprawności programu oraz testy numeryczne.
 
 ### Projekt Rozgrzewkowy
-Znajdowanie miejsc zerowych funkcji przy wykorzystaniu metody bisekcji
+Znajdowanie miejsc zerowych funkcji przy wykorzystaniu metody bisekcji.
 
 ### Projekt 1
 Przybliżanie wartości całki podwójnej na trójkącie za pomocą kwadratury złożonej 4-tego rzędu. Zawarte są również testy poprawności i testy numeryczne w tym implementacja metody Monte Carlo (dla porównania), która zgodnie z przewidywaniami wypada w testach gorzej.
