@@ -1,4 +1,4 @@
-function root = bisection(f, left, right)
+function root = bisection(f, left, right) 
 % Zadanie R
 % Miłosz Wysocki, 324572
 %

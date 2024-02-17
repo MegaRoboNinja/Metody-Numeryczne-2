@@ -9,4 +9,4 @@ fprintf("Oczekiwano: %.1e", expected);
 fprintf("\tOtrzymano: %.1e", calculated);
 err = abs(calculated - expected);
 errPerc = abs(calculated - expected)/expected;
-fprintf("\tBłąd: %.1e\t (Wzgl: %.2e)\n", err, errPerc);
+fprintf("\tBłąd: %.1e\t (Wzgl: %.2e)\n", err, errPerc); 

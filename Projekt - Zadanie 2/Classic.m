@@ -1,5 +1,5 @@
 function B = Classic()
-% Projekt 2, zadanie 49
+% Projekt 2, zadanie 49 
 % Miłosz Wysocki, 324572
 %
 % WYJŚCIE
